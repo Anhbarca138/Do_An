@@ -41,12 +41,14 @@
             <field name="model">lich_su_cong_tac</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="nhan_vien_id" />
-                    <field name="phong_ban_id" />
-                    <field name="chuc_vu_id" />
-                    <field name="time_start" />
-                    <field name="time_end" />
-
+ <field name="time_start" select="multi" />
+                        <field name="time_end" select="multi" />
+                    <searchpanel>
+                        <field name="nhan_vien_id" select="multi" />
+                        <field name="phong_ban_id" select="multi" />
+                        <field name="chuc_vu_id" select="multi" />
+                       
+                    </searchpanel>
                 </search>
             </field>
         </record>

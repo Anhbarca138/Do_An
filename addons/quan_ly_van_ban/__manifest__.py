@@ -26,6 +26,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/van_ban_di.xml',
+        'views/trang_thai.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

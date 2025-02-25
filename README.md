@@ -73,6 +73,8 @@ xmlrpc_port = 8069
 
 Lệnh chạy
 ```
+source venv/bin/activate
+sudo docker-compose up -d
 python3 odoo-bin.py -c odoo.conf -u all
 python3 odoo-bin.py -c odoo.conf -u quan_ly_van_ban --dev=all
 ```
@@ -81,4 +83,7 @@ python3 odoo-bin.py -c odoo.conf -u quan_ly_van_ban --dev=all
 Người sử dụng truy cập theo đường dẫn _http://localhost:8069/_ để đăng nhập vào hệ thống.
 
 Hoàn tất
-    
+# gen key ssh
+ssh-keygen
+cat /home/navn/.ssh/id_rsa.pub
+add to your git account

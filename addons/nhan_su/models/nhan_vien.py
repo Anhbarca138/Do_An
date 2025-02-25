@@ -13,5 +13,12 @@ class NhanVien(models.Model):
     email = fields.Char("Email")
     so_dien_thoai = fields.Char("Số điện thoại")
     lich_su_cong_tac_ids = fields.One2many("lich_su_cong_tac",string="Danh sách lịch sử công tác", inverse_name="nhan_vien_id")
+    tuoi = fields.Integer("Tuổi", compute="_compute_tuoi", store=True)
+
+    @api.depends('ngay_sinh')
+    def _compute_tuoi(self):
+        for record in self:
+            if record.ngay_sinh:
+                record.tuoi = (fields.Date.today() - record.ngay_sinh).days // 365
 
 
