@@ -1,9 +1,9 @@
 from odoo import models, fields, api
 
 
-class VanBanDi(models.Model):
-    _name = 'van_ban_di'
-    _description = 'Bảng chứa thông tin van_ban_di'
+class VanBanDen(models.Model):
+    _name = 'van_ban_den'
+    _description = 'Bảng chứa thông tin văn bản đến'
     
     ngay_di = fields.Date("Ngày đi", required=True)
     so_hieu = fields.Char("Số hiệu", required=True)

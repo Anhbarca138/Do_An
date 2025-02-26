@@ -13,6 +13,9 @@
                             <field name="trich_yeu" />
                             <field name="ngay_di" />
                             <field name="id_loai_van_ban" />
+                            <field name="id_nguoi_phat_hanh" />
+                            <field name="id_do_mat" />
+                            <field name="id_co_quan_ban_hanh" />
                             <field name="tep_dinh_kem" widget="pdf_viewer" />
 
                         </group>
@@ -31,7 +34,9 @@
                     <field name="trich_yeu" />
                     <field name="ngay_di" />
                     <field name="id_loai_van_ban" />
-                    <field name="tep_dinh_kem" widget="pdf_viewer" />
+                    <field name="id_nguoi_phat_hanh" />
+                    <field name="id_do_mat" />
+                    <field name="id_co_quan_ban_hanh" />
                 </tree>
             </field>
         </record>
