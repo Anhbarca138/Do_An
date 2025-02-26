@@ -10,6 +10,5 @@ class TrangThai(models.Model):
     ten_trang_thai = fields.Char("Tên trạng thái", required=True)
     mo_ta = fields.Char("Mô tả")
 
-    # van_ban_di_id = fields.Many2one("van_ban_di", string="Văn bản đi")
 
     

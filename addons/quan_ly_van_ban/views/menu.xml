@@ -18,6 +18,18 @@
             sequence="1"
             action="action_trang_thai"
         />
+             <menuitem name="Độ mật" 
+            id="menu_do_mat" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_do_mat"
+        />
+          <menuitem name="Loại văn bản" 
+            id="menu_loai_van_ban" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_loai_van_ban"
+        />
        
     </data>
 </odoo>

@@ -9,11 +9,12 @@
                     <sheet>
                         <div class="oe_read_only" style="font-size:25px">Văn bản</div>
                         <group col="4" string="Thông tin chung">
-                            <field name="ten_van_ban" />
-                            <field name="file" widget="pdf_viewer" />
-                            <field name="ngay_tao" />
-                            <field name="trang_thai_id" />
-                            <field  name ="nhan_vien_id"/>
+                            <field name="so_hieu" />
+                            <field name="trich_yeu" />
+                            <field name="ngay_di" />
+                            <field name="id_loai_van_ban" />
+                            <field name="tep_dinh_kem" widget="pdf_viewer" />
+
                         </group>
                     </sheet>
 
@@ -26,13 +27,11 @@
             <field name="model">van_ban_di</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="ten_van_ban" />
-                    <field name="file"  />
-                    <field name="ngay_tao" />
-                    <field name="trang_thai_id" />
-                            <field  name ="nhan_vien_id"/>
-
-
+                    <field name="so_hieu" />
+                    <field name="trich_yeu" />
+                    <field name="ngay_di" />
+                    <field name="id_loai_van_ban" />
+                    <field name="tep_dinh_kem" widget="pdf_viewer" />
                 </tree>
             </field>
         </record>
@@ -41,8 +40,10 @@
             <field name="model">van_ban_di</field>
             <field name="arch" type="xml">
                 <search>
-                    <field name="ten_van_ban" />
-
+                    <field name="so_hieu" />
+                    <field name="trich_yeu" />
+                    <field name="ngay_di" />
+                    <field name="id_loai_van_ban" />
                 </search>
             </field>
         </record>
