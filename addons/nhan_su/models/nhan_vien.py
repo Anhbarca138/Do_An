@@ -15,6 +15,8 @@ class NhanVien(models.Model):
     lich_su_cong_tac_ids = fields.One2many("lich_su_cong_tac",string="Danh sách lịch sử công tác", inverse_name="nhan_vien_id")
     tuoi = fields.Integer("Tuổi", compute="_compute_tuoi", store=True)
 
+    ids_van_ban_di = fields.One2many(comodel_name='van_ban_di', inverse_name='id_nguoi_phat_hanh', string="Số văn bản đi")
+
     @api.depends('ngay_sinh')
     def _compute_tuoi(self):
         for record in self:

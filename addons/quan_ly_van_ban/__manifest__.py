@@ -29,6 +29,7 @@
         'views/trang_thai.xml',
         'views/do_mat.xml',
         'views/loai_van_ban.xml',
+        'views/van_ban_den.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

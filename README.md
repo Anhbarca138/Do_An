@@ -76,7 +76,7 @@ Lệnh chạy
 source venv/bin/activate
 sudo docker-compose up -d
 python3 odoo-bin.py -c odoo.conf -u all
-python3 odoo-bin.py -c odoo.conf -u quan_ly_van_ban --dev=all
+python3 odoo-bin.py -c odoo.conf -u quan_ly_van_ban,nhan_su --dev=all
 ```
 
 
