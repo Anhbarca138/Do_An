@@ -14,6 +14,7 @@
                             <field name="loai_van_ban" />
                             <field name="mo_ta" />
                             <field name="van_ban_di_ids" />
+                            <field name="van_ban_den_ids" />
 
 
                         </group>
@@ -33,6 +34,7 @@
                     <field name="loai_van_ban" />
                     <field name="mo_ta" />
                     <field name="van_ban_di_ids" />
+                    <field name="van_ban_den_ids" />
 
                 </tree>
             </field>
