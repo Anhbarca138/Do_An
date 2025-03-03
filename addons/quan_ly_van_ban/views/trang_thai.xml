@@ -9,7 +9,7 @@
                     <sheet>
                         <div class="oe_read_only" style="font-size:25px">Trạng thái</div>
                         <group col="4" string="Thông tin chung">
-                            <field name="id_trang_thai" />
+                            <field name="id" />
 
                             <field name="ten_trang_thai" />
                             <field name="mo_ta" />
@@ -26,7 +26,7 @@
             <field name="model">trang_thai</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="id_trang_thai" />
+                    <field name="id" />
 
                     <field name="ten_trang_thai" />
                     <field name="mo_ta" />
