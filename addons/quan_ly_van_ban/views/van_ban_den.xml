@@ -7,7 +7,7 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <div class="oe_read_only" style="font-size:25px">Văn bản</div>
+                        <div class="oe_read_only" style="font-size:25px">Văn bản đến </div>
                         <group col="4" string="Thông tin chung">
                             <field name="so_hieu" />
                             <field name="trich_yeu" />
@@ -17,10 +17,17 @@
                             <field name="id_nam" />
 
                             <field name="co_quan_ban_hanh" />
+                            <!-- <field name="ids_cong_viec" /> -->
 
                             <field name="tep_dinh_kem" widget="pdf_viewer" />
 
                         </group>
+                        <notebook>
+                            <page string="Cong viec">
+                                <field name="ids_cong_viec" />
+                            </page>
+
+                        </notebook>
                     </sheet>
 
                 </form>
@@ -39,6 +46,7 @@
                     <field name="id_do_mat" />
                     <field name="co_quan_ban_hanh" />
                     <field name="id_nam" />
+                    
 
                 </tree>
             </field>
@@ -55,7 +63,7 @@
             </field>
         </record>
         <record id="action_van_ban_den" model="ir.actions.act_window">
-            <field name="name">Quản lý văn bản</field>
+            <field name="name">Quản lý văn bản đến</field>
             <field name="res_model">van_ban_den</field>
             <field name="view_mode">tree,form</field>
             <field name="search_view_id" ref="van_ban_den_search" />
