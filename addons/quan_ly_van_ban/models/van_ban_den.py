@@ -15,6 +15,8 @@ class VanBanDen(models.Model):
     
     id_do_mat = fields.Many2one('do_mat', string='Độ mật')
     id_loai_van_ban = fields.Many2one('loai_van_ban', string='Loại văn bản')
+    id_nam = fields.Many2one('nam', string='Năm')
+    
 
 
 

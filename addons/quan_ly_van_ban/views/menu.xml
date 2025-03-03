@@ -18,6 +18,12 @@
             sequence="2"
             action="action_van_ban_den"
         />
+         <menuitem name="Quản lý công việc"
+            id="menu_cong_viec"
+            parent="menu_root"
+            sequence="2"
+            action="action_cong_viec"
+        />
         <menuitem name="Cấu hình văn bản"
             id="menu_cau_hinh_van_ban"
             parent="menu_root"
@@ -39,7 +45,11 @@
             parent="menu_cau_hinh_van_ban"
             sequence="3"
             action="action_loai_van_ban" />
-        
+         <menuitem name="Năm"
+            id="menu_nam"
+            parent="menu_cau_hinh_van_ban"
+            sequence="4"
+            action="action_nam" />
 
 
     </data>
