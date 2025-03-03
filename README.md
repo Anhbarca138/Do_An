@@ -87,3 +87,4 @@ Hoàn tất
 ssh-keygen
 cat /home/navn/.ssh/id_rsa.pub
 add to your git account
+add remote by ssh link

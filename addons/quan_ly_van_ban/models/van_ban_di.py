@@ -7,7 +7,7 @@ class VanBanDi(models.Model):
     
     id = fields.Integer("ID văn bản đi", required=True)
     ngay_di = fields.Date("Ngày đi", required=True)
-    so_hieu = fields.Char("Số hiệu", required=True)
+    so_hieu = fields.Char("Số hiệu", compute="_compute_so_hieu", store=True, readonly=True)
     trich_yeu = fields.Text("Trích yếu", required=True)
     tep_dinh_kem = fields.Binary("Tệp đính kèm")
     
@@ -16,7 +16,14 @@ class VanBanDi(models.Model):
     id_nguoi_phat_hanh = fields.Many2one('nhan_vien', string='Người phát hành')
     id_do_mat = fields.Many2one('do_mat', string='Độ mật')
     id_nam = fields.Many2one('nam', string='Năm')
-
+    @api.depends('ngay_di')
+    def _compute_so_hieu(self):
+        for record in self:
+            if record.ngay_di:
+                count = self.search_count([('ngay_di', '=', record.ngay_di)])  # Đếm số lượng đã có
+                record.so_hieu = f"{count + 1}_{record.ngay_di.strftime('%Y%m%d')}"
+            else:
+                record.so_hieu = False  # Nếu chưa có ngày đến thì không có số hiệu
 
 
 
