@@ -1,0 +1,35 @@
+.oe_form_container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.oe_form_group {
+    margin-bottom: 20px;
+}
+
+.oe_button {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+}
+
+.oe_button:hover {
+    background-color: #0056b3;
+}
+
+.oe_form_label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Tạo hiệu ứng cho các trường thông tin */
+.oe_form_input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}

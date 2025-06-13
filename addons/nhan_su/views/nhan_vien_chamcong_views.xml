@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_form_nhan_vien_chamcong" model="ir.ui.view">
+        <field name="name">nhan.vien.chamcong.form</field>
+        <field name="model">nhan_vien_chamcong</field>
+        <field name="arch" type="xml">
+            <form string="Nhân viên chấm công">
+                <group>
+                    <field name="employee_id"/>
+                    <field name="check_in"/>
+                    <field name="image"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_nhan_vien_chamcong" model="ir.ui.view">
+        <field name="name">nhan.vien.chamcong.tree</field>
+        <field name="model">nhan_vien_chamcong</field>
+        <field name="arch" type="xml">
+            <tree string="Nhân viên chấm công">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="check_in"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_nhan_vien_chamcong" model="ir.actions.act_window">
+        <field name="name">Chấm công nhân viên</field>
+        <field name="res_model">nhan_vien_chamcong</field>
+        <field name="view_mode">tree,form</field>
+        <field name="type">ir.actions.act_window</field>
+    </record>
+</odoo>
